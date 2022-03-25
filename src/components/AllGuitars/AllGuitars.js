@@ -23,6 +23,12 @@ const AllGuitars = () => {
         
     }
 
+    const clean =()=>{
+        console.log('clean');
+        const setClean=[];
+        setGuitarCart(setClean);
+    }
+
     
 
     return (
@@ -36,6 +42,7 @@ const AllGuitars = () => {
             <div className='Guitars-details' ><h1>Guitars Details</h1>
             {guitarCart.map(info=> <InfoGuitar info={info}></InfoGuitar>)}
 
+            <button onClick={clean}>Choose Again</button><br />
             
             </div>
         </div>
