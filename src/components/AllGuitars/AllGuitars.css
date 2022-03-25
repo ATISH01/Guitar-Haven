@@ -1,0 +1,16 @@
+.all-Guitars{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.Guitars-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    margin: 100px 50px;
+}
+.Guitars-details{
+        position: sticky;
+        top: 0;
+        padding: 30px 20px;
+    }
