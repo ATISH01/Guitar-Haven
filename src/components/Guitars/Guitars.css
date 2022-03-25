@@ -19,13 +19,14 @@
     border-radius: 8px;
     padding: 7px;
 }
+
 .btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: 100%;
     background: #ffcfb3;
     border: none;
     border-radius: 0px 0px 8px 8px;
-    margin-top: 16px;
-   
-    
-    
+    margin-top: 16px;  
 }
