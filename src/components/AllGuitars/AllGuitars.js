@@ -8,7 +8,8 @@ const AllGuitars = () => {
     const [guitars, setGuitars] = useState([])
     
     const [guitarCart, setGuitarCart] = useState([])
-    
+    const [randomSelect, setRandomSelect] = useState([]);
+    console.log(randomSelect);
     
     
     useEffect(()=>{
@@ -29,7 +30,10 @@ const AllGuitars = () => {
         setGuitarCart(setClean);
     }
 
-    
+    const random =()=>{
+        let randomSelect = guitarCart[Math.floor(Math.random() * guitarCart.length)];
+        setRandomSelect(randomSelect);
+    }
 
     return (
         <div className='all-Guitars'>
@@ -43,7 +47,8 @@ const AllGuitars = () => {
             {guitarCart.map(info=> <InfoGuitar info={info}></InfoGuitar>)}
 
             <button onClick={clean}>Choose Again</button><br />
-            
+            <button onClick={random}>Choose For Me</button>
+            <h2>Choosed For You:{randomSelect.name}</h2>
             </div>
         </div>
     );
