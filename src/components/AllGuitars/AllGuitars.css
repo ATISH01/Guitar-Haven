@@ -42,15 +42,7 @@
     width: 80%;
 }
 
-.answser{
-    border: 1px solid white;
-    border-radius: 6px;
-    color: white;
-    padding: 7px;
-}
-.answser-text{
-    font-family: 'Times New Roman', Times, serif;
-}
+
 @media screen and (max-width:480px) {
     .Guitars-list{
         

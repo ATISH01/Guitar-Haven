@@ -3,6 +3,7 @@ import InfoGuitar from '../InfoGuitar/InfoGuitar';
 import Guitars from '../Guitars/Guitars';
 
 import './AllGuitars.css'
+import Answer from '../Answer/Answer';
 
 const AllGuitars = () => {
     const [guitars, setGuitars] = useState([])
@@ -55,24 +56,7 @@ const AllGuitars = () => {
             <h3> Choosed For You:<br />{randomSelect.name}</h3>
             <img className='image' src={randomSelect.img} alt="" />
             </div>
-            <div className='answser'>
-                <h1 className='answser-text'>Answers:</h1>
-                <p className='answser-text'> 
-                <h5>How React is works?</h5><br />
-                    react is javascripts library.It's work with virtual dom.we can write html like element here but it's not real html.react converts it to js object.when we update in components it create
-                    a virtual dom and compared with origianal dom.Then it updates only where it changed and call this specific function only. <br /><br />
-
-                        <h5>Props vs State</h5>
-                        Props: <br /> 1.Props is immutable <br />
-                            2.It gets value from parent  <br />
-                            3.It can pass value parent to child. <br />
-                        State: <br />
-                            1.State is muteable <br />
-                            2.It stored property value. <br />
-                            3.It created with in component but we can pass state value by props. <br />
-    </p>
-
-            </div>
+           <Answer></Answer>
         </div>
     );
 };
