@@ -2,17 +2,17 @@
     padding: 10px;
     display: grid;
     grid-template-columns: 4fr 1fr;
+    
 }
 .Guitars-list{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin: 0 20px;
-    
-    
-   
+  
 }
 .Guitars-details{
+        
         background-color: black;
         border-radius: 8px;
         padding: 8px;
@@ -29,8 +29,8 @@
     
 }
 .Guitars-details img{
-    
-    margin-left: 10px;
+    margin: auto;
+    /* margin-left: 10px; */
     border-radius: 8px;
 }
 .Guitars-details button{
@@ -41,11 +41,22 @@
 .Guitars-details img{
     width: 80%;
 }
+
+.answser{
+    border: 1px solid white;
+    border-radius: 6px;
+    color: white;
+    padding: 7px;
+}
+.answser-text{
+    font-family: 'Times New Roman', Times, serif;
+}
 @media screen and (max-width:480px) {
     .Guitars-list{
-        display: inline;
-        margin-right: 40px;
-        gap: 45px;
+        
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
          
     }
     .Guitars-details{

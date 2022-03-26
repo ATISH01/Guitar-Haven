@@ -13,8 +13,10 @@ const Guitars = (props) => {
     
     return (
         <div className='guitars'>
+            <div className='image-wrapper'>
             <h4>{name}</h4>
             <img src={img} alt="" />
+            </div>
             <div className="icon">
             <button onClick={()=>handleEvent(guitar)} 
             className='btn'><p>Buy</p><FontAwesomeIcon id='FontAwesomeIcon' icon={faShoppingBasket} /></button>

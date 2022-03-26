@@ -8,6 +8,12 @@
     
     
 }
+.image-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .guitars h4{
     font-family: 'Lucida Handwriting';
     color: white;
@@ -30,11 +36,12 @@
     justify-content: space-around;
     width: 100%;
     background: none;
-    border: none;
+    border: 1px solid white;
     border-radius: 0px 0px 8px 8px;
     margin-top: 10px;  
 }
 .btn p{
+    
     margin-top: 7px;
     margin-bottom: 7px;
     color: white;
@@ -47,6 +54,8 @@
 
 @media screen and (max-width:900px){
     .guitars{
-        margin-right: 25px;
+        margin:auto;
+        margin-bottom: 5px;
+        margin-top: 6px;
     }
 }
