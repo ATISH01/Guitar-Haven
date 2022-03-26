@@ -1,6 +1,6 @@
 .header{
     height: 80px;
-    background-color: #1C2B35;
+    background-color: #040708;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,7 +9,7 @@
 }
 .header h1{
     color: aliceblue;
-    font-family:Cambria;
+    font-family:'Lucida Handwriting';
 }
 .header h1:hover{
     color: chocolate;

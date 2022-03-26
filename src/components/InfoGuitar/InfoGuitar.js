@@ -7,7 +7,7 @@ const InfoGuitar = (props) => {
 
     return (
         <div className='guitar-info'>
-            <h2>Name:{name}</h2>
+            <h4>Name:-{name}</h4>
             
         </div>
     );

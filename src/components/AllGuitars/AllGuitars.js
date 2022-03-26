@@ -28,6 +28,7 @@ const AllGuitars = () => {
         console.log('clean');
         const setClean=[];
         setGuitarCart(setClean);
+        setRandomSelect(setClean);
     }
 
     const random =()=>{
@@ -47,8 +48,9 @@ const AllGuitars = () => {
             {guitarCart.map(info=> <InfoGuitar info={info}></InfoGuitar>)}
 
             <button onClick={clean}>Choose Again</button><br />
-            <button onClick={random}>Choose For Me</button>
-            <h2>Choosed For You:{randomSelect.name}</h2>
+            <button onClick={random}>Choose For Me</button> 
+            <h3> Choosed For You:<br />{randomSelect.name}</h3>
+            <img src={randomSelect.img} alt="" />
             </div>
         </div>
     );
